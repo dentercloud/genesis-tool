@@ -36,7 +36,7 @@ export async function generateNetworkConfig(
   const ts: string = quorumConfig.noOutputTimestamp
     ? ""
     : fileHandler.createTimestamp();
-  const outputDir: string = OUTPUT_BASE_DIR + "/" + ts;
+  const outputDir: string = OUTPUT_BASE_DIR + "/";
 
   fileHandler.setupOutputFolder(outputDir, quorumConfig);
 
