@@ -28,7 +28,7 @@
     "lint": "eslint './src/**'",
     "lintAndFix": "eslint --fix './src/**'",
     "prepare": "tsc && eslint --fix './src/**'",
-    "start": "node build/index.js",
+    "start": "node build/index.js --consensus ${CONSENSUS} --chainID ${CHAINID} --blockperiod ${BLOCKPERIOD} --requestTimeout ${REQUESTTIMEOUT} --epochLength ${EPOCHLENGTH} --difficulty ${DIFFICULTY} --gasLimit ${GASLIMIT} --coinbase ${COINBASE} --validators ${VALIDATORS} --members ${MEMBERS} --bootnodes ${BOOTNODES} --alloc ${ALLOC}",
     "publish": "npm run clean && npm run build && npm run test && npm publish --tag=latest"
   },
   "dependencies": {
