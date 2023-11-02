@@ -33,9 +33,9 @@ export async function generateNetworkConfig(
 ): Promise<string> {
   // Create a new root folder each time - dont destroy anything that existed
   const OUTPUT_BASE_DIR = `${quorumConfig.outputPath}`;
-  // const ts: string = quorumConfig.noOutputTimestamp
-    ? ""
-    : fileHandler.createTimestamp();
+//  const ts: string = quorumConfig.noOutputTimestamp
+//    ? ""
+//    : fileHandler.createTimestamp();
   const outputDir: string = OUTPUT_BASE_DIR + "/";
 
   fileHandler.setupOutputFolder(outputDir, quorumConfig);
