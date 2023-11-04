@@ -156,7 +156,7 @@ export async function main(): Promise<void> {
         noOutputTimestamp: {
           type: "boolean",
           demandOption: false,
-          default: false,
+          default: true,
           describe: "Remove generated timestamp from output folder name",
         },
       })
